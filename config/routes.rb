@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do 
+    resources :watch_lists
     resources :products
     resources :purveyors
     resources :restaurants

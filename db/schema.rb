@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_05_154625) do
+ActiveRecord::Schema.define(version: 2020_05_08_144013) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 2020_05_05_154625) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "watch_lists", force: :cascade do |t|
+    t.string "list_item"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
